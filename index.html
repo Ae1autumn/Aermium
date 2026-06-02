@@ -2310,7 +2310,7 @@
     <div class="page-wrap">
       <article class="panel-box project-carousel-box" id="projectCarousel"
         role="region" aria-label="项目" aria-roledescription="轮播">
-        <nav class="carousel-dots" id="projectDots" aria-label="프로젝트 탐색"></nav>
+        <nav class="carousel-dots" id="projectDots" aria-label="项目导航"></nav>
         <div class="project-track-outer">
           <div class="carousel-track" id="projectTrack" aria-live="polite"></div>
         </div>
@@ -2331,7 +2331,7 @@
         <div class="stack-box" id="stackBox"
           role="listbox" aria-label="이미지 카드" tabindex="0"
           aria-roledescription="카드 스택. 拖动或使用键盘浏览">
-          <div class="stack-cards" id="stackCards" aria-live="polite"></div>
+          <div class="stack-cards" id="stackCards" aria-label="图片堆叠区域" aria-live="polite"></div>
           <div class="stack-overlay" id="stackOverlay" aria-hidden="true">
             <span>右滑切换 &nbsp;·&nbsp; 左滑返回</span>
           </div>
@@ -2361,7 +2361,7 @@
         <div class="doc-content no-scrollbar" id="docContent" role="document" aria-live="polite">
           <div class="doc-text" id="docText"></div>
         </div>
-        <nav class="doc-tabs no-scrollbar" id="docTabs" aria-label="문서 탭">
+        <nav class="doc-tabs no-scrollbar" id="docTabs" aria-label="文档标签（点击切换不同文档）">
           <div class="doc-tab-spacer"></div>
           <div class="doc-tab-spacer"></div>
         </nav>
@@ -2387,7 +2387,7 @@
   <section class="page" id="page7" aria-label="团队成员">
     <div class="page-wrap">
       <article class="member-box panel-box" aria-label="成员介绍">
-        <nav class="dots-row" id="memberDots" aria-label="멤버 탐색"></nav>
+        <nav class="dots-row" id="memberDots" aria-label="成员导航"></nav>
         <header class="member-upper" id="memberUpper">
           <div class="member-avatar-box" role="img" aria-label="멤버 아바타" tabindex="0"><span>Avatar</span></div>
           <div class="member-info-col">
@@ -2409,7 +2409,7 @@
     <div class="page-wrap">
       <div class="contact-panel panel-box" id="contactPanel">
 
-        <nav class="tab-switcher" id="tabSwitcher" role="tablist" aria-label="섹션 탭">
+        <nav class="tab-switcher" id="tabSwitcher" role="tablist" aria-label="内容板块切换（文件/联系方式/兑换码）">
           <div class="tab-slider" id="tabSlider" aria-hidden="true"></div>
           <button class="tab-btn" data-tab="0" id="tabBtn0"
             role="tab" aria-selected="false" aria-controls="pane-images" aria-label="파일">
@@ -2422,7 +2422,7 @@
             </svg>
           </button>
           <button class="tab-btn" data-tab="1" id="tabBtn1"
-            role="tab" aria-selected="false" aria-controls="pane-contact" aria-label="연락처">
+            role="tab" aria-selected="false" aria-controls="pane-contact" aria-label="联系方式">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
               <path d="M4 5.5C4 4.67 4.67 4 5.5 4h9C15.33 4 16 4.67 16 5.5v6c0 .83-.67 1.5-1.5 1.5H8l-4 3V5.5z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
             </svg>
@@ -2442,12 +2442,12 @@
 
           <!-- Pane 0: Files -->
           <div class="pane" id="pane-images" role="tabpanel" aria-labelledby="tabBtn0" tabindex="0">
-            <div class="file-list no-scrollbar" id="fileList" role="list" aria-label="파일 목록"></div>
+            <div class="file-list no-scrollbar" id="fileList" role="list" aria-label="文件列表"></div>
           </div>
 
           <!-- Pane 1: Contact -->
           <div class="pane" id="pane-contact" role="tabpanel" aria-labelledby="tabBtn1" tabindex="0">
-            <div class="contact-col" role="list" aria-label="연락처">
+            <div class="contact-col" role="list" aria-label="联系方式">
               <a class="contact-card" id="emailBtn" href="#" role="listitem">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false">
                   <rect x="2" y="4" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.1"/>
@@ -2471,12 +2471,12 @@
             <div class="redeem-wrap">
               <div class="redeem-toast-stack" id="redeemToastStack" aria-live="assertive" aria-atomic="true"></div>
               <div class="redeem-top" aria-hidden="true">
-                <img class="redeem-gift" src="gift.gif" alt="선물 아이콘"/>
+                <img class="redeem-gift" src="gift.gif" alt="礼物图标"/>
               </div>
               <div class="redeem-input-row" id="redeemInputRow">
                 <input class="redeem-input" id="redeemInput" enterkeyhint="done" type="text"
                   autocomplete="off" spellcheck="false"
-                  aria-label="리딤 코드 입력"
+                  aria-label="输入兑换码"
                   aria-describedby="redeemHint"/>
                 <span class="redeem-result" id="redeemResult" aria-live="polite"></span>
                 <svg class="redeem-check" id="redeemCheck" width="18" height="18"
@@ -2515,11 +2515,11 @@
     <div class="search-input-wrap" id="searchInputWrap">
       <input class="search-input" id="searchInput" type="search"
         autocomplete="off" spellcheck="false" enterkeyhint="search"
-        aria-label="검색어 입력" placeholder="검색…"
+        aria-label="输入搜索词" placeholder="搜索"
         aria-controls="searchResults" aria-autocomplete="list"/>
     </div>
     <!-- Tabs -->
-    <nav class="search-tabs-wrap" id="searchTabsWrap" aria-label="검색 범위 탭">
+    <nav class="search-tabs-wrap" id="searchTabsWrap" aria-label="搜索类型切换">
       <div class="search-tabs" id="searchTabs" role="tablist">
         <div class="search-tab-slider" id="searchTabSlider" aria-hidden="true"></div>
         <button class="search-tab-btn active" id="searchTab0" data-tab="0" role="tab" aria-selected="true"></button>
@@ -2539,7 +2539,7 @@
 <div id="galleryOverlay" class="panel-overlay" role="dialog" aria-modal="true" aria-label="图片画廊">
   <div class="panel-frame">
     <div class="gallery-inner no-scrollbar">
-      <div class="masonry-grid" id="masonryGrid" role="list" aria-label="이미지 그리드"></div>
+      <div class="masonry-grid" id="masonryGrid" role="list" aria-label="图片网格"></div>
     </div>
   </div>
 </div>
@@ -2549,7 +2549,7 @@
 ============================================================ -->
 <div id="blogListOverlay" class="panel-overlay" role="dialog" aria-modal="true" aria-label="全部文章">
   <div class="panel-frame">
-    <div class="blog-list-inner no-scrollbar" id="blogListGrid" role="list" aria-label="블로그 목록"></div>
+    <div class="blog-list-inner no-scrollbar" id="blogListGrid" role="list" aria-label="博客列表"></div>
   </div>
 </div>
 
@@ -4425,6 +4425,7 @@ function createStackCards() {
   galleryData.slice(0, STACK_COUNT).forEach((d, i) => {
     const card = document.createElement('div');
     card.className = 'stack-card';
+            card.setAttribute('role', 'option');
     card.dataset.idx = i;
     if (d.image) {
       const img = document.createElement('img');
@@ -5621,6 +5622,7 @@ function buildMasonry() {
   galleryData.forEach((item, i) => {
     const el = document.createElement('div');
     el.className = 'masonry-item';
+            el.setAttribute('role', 'listitem');
     if (item.image) {
       el.style.padding = '0';
       const img = document.createElement('img');
@@ -5697,6 +5699,7 @@ function buildBlogList() {
   blogData.forEach((d, i) => {
     const card = document.createElement('div');
     card.className = 'blog-list-card';
+            card.setAttribute('role', 'listitem');
     card.innerHTML = `
       <div class="blog-list-card-meta">
         <span class="blog-list-card-date">${d.date}</span>
@@ -6050,6 +6053,7 @@ document.getElementById('blogListCloseBtn')?.addEventListener('click', () => clo
         const idx = blogData.indexOf(d);
         const card = document.createElement('div');
         card.className = 'blog-list-card';
+            card.setAttribute('role', 'listitem');
         card.innerHTML = `
           <div class="blog-list-card-meta">
             <span class="blog-list-card-date">${d.date}</span>
@@ -6070,6 +6074,7 @@ document.getElementById('blogListCloseBtn')?.addEventListener('click', () => clo
         const fidx = fileData.indexOf(f);
         const row = document.createElement('div');
         row.className = 'file-row';
+            row.setAttribute('role', 'listitem');
         const previewable = isFilePreviewable(f.name);
         if (previewable) row.style.cursor = 'pointer';
         row.innerHTML = `
@@ -6608,6 +6613,7 @@ function bootstrapApp() {
     fileData.forEach((f, i) => {
       const row = document.createElement('div');
       row.className = 'file-row';
+            row.setAttribute('role', 'listitem');
       const previewable = isFilePreviewable(f.name);
       if (previewable) row.style.cursor = 'pointer';
       row.innerHTML = `
