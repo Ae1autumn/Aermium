@@ -1,6 +1,7 @@
 # 操作系统生成的文件
 .DS_Store
 Thumbs.db
+.nomedia
 
 # 编辑器/IDE配置（如果你用VSCode，建议只忽略个人配置）
 .vscode/
