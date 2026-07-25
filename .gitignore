@@ -1,0 +1,32 @@
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 编辑器/IDE配置（如果你用VSCode，建议只忽略个人配置）
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# Node.js依赖
+node_modules/
+
+# 日志文件
+*.log
+
+# 环境变量/密钥
+.env
+.env.local
+.env.*.local
+
+# 打包文件
+dist/
+build/
+*.zip
+*.tar.gz
